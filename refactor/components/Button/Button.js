@@ -1,5 +1,6 @@
 import React from 'react';
 import './Button.css';
+import GameContext from '../../GameContext';
 
 const Button = (props) => (
     <GameContext.Consumer>

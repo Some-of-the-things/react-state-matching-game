@@ -5,7 +5,8 @@ import GameContext  from '../../GameContext';
 
 const TileSelector = (props) => {
   const [ref, hovered] = useHover();
-  return <GameContext.Consumer>
+  return ( 
+    <GameContext.Consumer>
     {
       ({numTiles, handleNumTileChange}) => {
         const dropdown = (
@@ -24,10 +25,11 @@ const TileSelector = (props) => {
               { hovered ? dropdown : null }
             </div>
           </div>
-        )
+        );
       }
     }
-  </GameContext.Consumer>
+    </GameContext.Consumer>
+  );
 }
 
 export default TileSelector

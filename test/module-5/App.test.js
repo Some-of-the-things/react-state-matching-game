@@ -12,7 +12,7 @@ describe('App', () => {
   let wrapper
   
   it('instantiates context provider @instantiate-context-provider', () => {
-
+    
     try {
       GameContext = require('../../refactor/GameContext')
       GameContext.default = {
