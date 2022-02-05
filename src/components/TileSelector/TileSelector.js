@@ -1,8 +1,7 @@
 import React from 'react'
 import './TileSelector.css'
 
-const TileSelector = () => {
-
+const TileSelector = (props) => {
 
   const dropdown = (
         <div className='tileSelectorContent' >
@@ -16,6 +15,7 @@ const TileSelector = () => {
    <div className='tileSelector'>
      <div>Number of Tiles</div>
      <div className='tileSelectorDropdown'>
+       {props.numTiles}
        {dropdown}
      </div>
    </div>

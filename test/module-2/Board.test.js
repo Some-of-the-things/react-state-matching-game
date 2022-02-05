@@ -14,7 +14,7 @@ describe('Board', () => {
   it('Passes props from the board to tiles @pass-board-props-to-tiles', () => {
 
     let firstTileProps = wrapper.find(Tile).at(0)
-
+    console.log(firstTileProps);
     try {
       firstTileProps = firstTileProps.props()
     } catch(error){
